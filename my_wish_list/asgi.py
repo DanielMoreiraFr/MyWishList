@@ -1,5 +1,5 @@
 """
-ASGI config for mywishlist project.
+ASGI config for my_wish_list project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'mywishlist.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'my_wish_list.settings')
 
 application = get_asgi_application()
