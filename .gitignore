@@ -1,4 +1,22 @@
+# Arquivo de configuração local (Chaves, senhas, etc.)
 .env
-.gitignore
+
+# Ambiente Virtual
+venv/
+ENV/
+env/
+
+# Byte-compiled / arquivos temporários do Python
 __pycache__/
-db.sqlite3
+*.py[cod]
+*$py.class
+
+# Arquivos de Banco de Dados local (se usar SQLite)
+*.sqlite3
+
+# Arquivos de mídia e estáticos coletados (opcional, mas recomendado se gerados dinamicamente)
+/media/
+
+# Extensões de editores de código (Ex: VS Code)
+.vscode/
+.idea/
