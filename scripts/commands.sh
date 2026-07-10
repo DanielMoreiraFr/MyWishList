@@ -1,4 +1,4 @@
-# !/bin/sh
+#!/bin/sh
 
 # O shell irá encerrar a execução do script quando um comando falhar
 set -e
@@ -11,6 +11,5 @@ done
 echo "✅ Postgres Database Started Successfully ($POSTGRES_HOST:$POSTGRES_PORT)"
 
 python manage.py collectstatic --noinput
-python manage.py makemigrations --noinput
 python manage.py migrate --noinput
-python manage.py runserver 0.0.0.0:8000
+exec python manage.py runserver 0.0.0.0:8000

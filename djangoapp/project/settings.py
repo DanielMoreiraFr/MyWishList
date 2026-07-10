@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'favorites',
     'friendships',
     'itens',
+    'project',
 ]
 
 MIDDLEWARE = [
