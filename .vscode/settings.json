@@ -1,0 +1,33 @@
+{
+  // --- Code Formatting & Automation ---
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "files.autoSave": "onFocusChange",
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+
+  // --- Smooth UI & Animations ---
+  "editor.smoothScrolling": true,
+  "workbench.list.smoothScrolling": true,
+  "terminal.integrated.smoothScrolling": true,
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
+
+  // --- Visual Cleanup (De-clutter) ---
+  "editor.minimap.enabled": false,
+  "breadcrumbs.enabled": true,
+  "editor.linkedEditing": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+
+  // --- Typography & Files ---
+  "editor.fontFamily": "'JetBrains Mono', 'Fira Code', Consolas, monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 14,
+  "editor.lineHeight": 1.6,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "explorer.compactFolders": false
+}
