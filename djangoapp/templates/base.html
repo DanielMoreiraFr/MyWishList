@@ -1,0 +1,20 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Listino{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'index/css/style.css' %}">
+</head>
+<body>
+  {% if request.user.is_authenticated %}
+    {% include 'navbar_completa.html' %}
+  {% else %}
+    {% include 'navbar_publica.html' %}
+  {% endif %}
+<main>{% block content %}
+  {% endblock %}</main>
+</body>
+</html>

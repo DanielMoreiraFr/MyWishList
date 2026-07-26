@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Listino{% endblock %}
+
+{% block content %}
+<div class="tela-entrada">
+  <img src="{% static 'img/logo.svg' %}" alt="Listino" class="logo-entrada">
+  <p class="tagline">Sua wishlist de moda e estilo de vida, num só lugar.</p>
+  <div class="botoes-entrada">
+  <a href="#" class="botao botao-secundario">Entrar</a>
+  <a href="#" class="botao botao-primario">Cadastrar</a>
+  </div>
+</div>
+{% endblock %}

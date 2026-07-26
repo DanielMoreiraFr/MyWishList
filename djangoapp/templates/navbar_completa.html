@@ -1,0 +1,17 @@
+{% load static %}
+
+<nav class="navbar">
+  <div class="navbar-esquerda">
+    <a href="#">Wishlists</a>
+    <a href="#">Feed de Amigos</a>
+  </div>
+  <div class="navbar-centro">
+    <a href="#"><img src="{% static 'img/logo.svg' %}" alt="Listino"></a>
+  </div>
+  <div class="navbar-direita">
+    <a href="#">🔍</a>
+    <a href="#">🔔</a>
+    <a href="#">👤</a>
+    <a href="{% url 'configuracoes' %}">⚙️</a>
+  </div>
+</nav>

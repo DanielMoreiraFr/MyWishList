@@ -31,6 +31,7 @@ ALLOWED_HOSTS = [
     if host.strip()
 ]
 
+AUTH_USER_MODEL = 'accounts.CustomUser'
 
 # Application definition
 
@@ -64,7 +65,7 @@ ROOT_URLCONF = 'project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'], # Pasta central de templates na raiz do projeto
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -137,8 +138,16 @@ MEDIA_URL = '/media/'
 # /data/web/media
 MEDIA_ROOT = DATA_DIR / 'media'
 
+# Diretório para o Django buscar os estáticos durante o desenvolvimento
+STATICFILES_DIRS = [BASE_DIR / 'static']
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Exibe os e-mails (como recuperação de senha) no próprio console para facilitar o desenvolvimento
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# Rota padrão para qual o usuário será redirecionado caso acesse uma view com @login_required
+LOGIN_URL = 'login'
